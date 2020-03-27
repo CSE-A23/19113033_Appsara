@@ -1,0 +1,53 @@
+#include <iostream>
+#include<stdio.h>
+using namespace std;
+class student
+{
+   public:
+   char name[20];
+   int reg_no;
+   float chemistry,physics,maths;
+   int sum;
+   void get();
+   void check();
+ }s[100];
+void student :: get()
+{
+     
+     cin>>name;
+     cin>>reg_no;
+     cin>>chemistry;
+     cin>>physics;
+     cin>>maths;
+}
+void student :: check()
+{
+      if((chemistry>0&&physics>0&&maths>0)&&(chemistry<=100&&physics<=100&&maths<=100))
+      {
+           sum=chemistry+physics+maths;
+      }
+}
+int main()
+{
+    int n,i,a,tot=0;
+    cout<<"Enter no. of Students\n";
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        s[a].get();
+        s[a].check();
+    }
+    for(i=0;i<n;i++)
+    {
+      if(s[a].chemistry<0||s[a].chemistry>100||s[a].physics<0||s[a].physics>100||s[a].maths<0||s[a].maths>100)
+      {
+         cout<<"Marks of "<<s[a].name<<" isn't of the specifed range\n";
+      }
+      tot=s[0].sum;
+      if(tot<s[a].sum)
+      {
+         tot=s[a].sum;
+      }
+    }
+    cout<<s[a].name<<" has scored highest marks "<<tot;
+}
