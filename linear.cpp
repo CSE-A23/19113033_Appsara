@@ -2,19 +2,19 @@
 #include<stdio.h>
 void main()
 {
-    int arr[100],n,i;
+    int arr[100],n,x;
     printf("Enter the Array");
-    for(i=0;i<5;i++)
+    for(x=0;x<5;x++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",&arr[x]);
     }
     printf("Enter the element to be searched");
     scanf("%d",&n);
-    for(i=0;i<5;i++)
+    for(x=0;x<5;x++)
     {
-        if(n==arr[i])
+        if(n==arr[x])
         {
-            printf("The element is found at %d at %d",i,i+1);
+            printf("The element is found at %d at %d",x,x+1);
         }
     }
    getch();
